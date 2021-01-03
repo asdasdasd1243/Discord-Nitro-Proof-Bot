@@ -5,5 +5,5 @@ Scrapes profile pictures from servers that the bot is in.
 
 Credits: !! Snowwy#1337 or https://snowwy.wtf
 
-![Nitro Example](images/1.png)
-![Classic Example](images/2.png)
+![Nitro Example](images/1.PNG)
+![Classic Example](images/2.PNG)
