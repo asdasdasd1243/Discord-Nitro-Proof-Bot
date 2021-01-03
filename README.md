@@ -5,7 +5,9 @@ Scrapes profile pictures from servers that the bot is in.
 
 Credits: !! Snowwy#1337 or https://snowwy.wtf
 
-Run install.bat then once all the moduales are installed run run.bat
+Put ur bot token in config.json
+
+Run install.bat then once all the modules are installed run run.bat
 
 YOU NEED THE NODE.JS https://nodejs.org/en/download/
 
