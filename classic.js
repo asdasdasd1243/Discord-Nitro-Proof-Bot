@@ -56,9 +56,30 @@ function formatAMPM(e) {
   return (t = (t %= 12) || 12) + ":" + (a = a < 10 ? "0" + a : a) + " " + n;
 }
 client.on("ready", () => {
-  console.log("Bot has started."),
-    client.user.setActivity(`!! Snowwy#1337`);
-}),
+  function randomStatus() {
+    let status = [
+      "Infinite Codes In Stock",
+      "Generating Codes",
+      "Stealing Emojis",
+      "Invite Me:  >invite",
+      "!! Snowwy#1337 Is My Dad"
+    ]; // You can change it whatever you want.
+    let rstatus = Math.floor(Math.random() * status.length);
+
+    // client.user.setActivity(status[rstatus], {type: "WATCHING"});
+    // You can change the "WATCHING" into STREAMING, LISTENING, and PLAYING.
+    // Example: streaming
+
+    client.user.setActivity(status[rstatus], {
+      type: "PLAYING",
+      url: "https://www.twitch.tv/snowwy2k"
+    });
+  }
+  setInterval(randomStatus, 5000); // Time in ms. 30000ms = 30 seconds. Min: 20 seconds, to avoid ratelimit.
+
+  console.log("Online.");
+});
+
   client.on("message", async e => {
     if ("dm" === e.channel.type) return;
     if (e.author.bot) return;
